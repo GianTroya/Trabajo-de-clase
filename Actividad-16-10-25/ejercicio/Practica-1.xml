@@ -1,0 +1,62 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="horizontal"
+    android:padding="24dp"
+    tools:context=".LoginActivity">
+    
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Guardar"
+        android:onClick="onSaveClicked" />
+
+    <Button
+        android:id="@+id/cancelBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Cancelar"
+        android:onClick="onCancelClicked" />
+
+    <Button
+        android:id="@+id/helpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Ayuda"
+        android:onClick="onHelpedClicked" />
+
+</LinearLayout>
+
+<!--
+Este diseño define una interfaz de usuario en Android utilizando un LinearLayout con orientación horizontal.
+A continuación se explican los elementos y atributos clave:
+
+1. <LinearLayout>
+   - xmlns:android / xmlns:tools: Espacios de nombres necesarios para usar atributos estándar de Android y herramientas de diseño.
+   - android:layout_width="match_parent": El ancho del contenedor se ajusta al ancho total del padre.
+   - android:layout_height="wrap_content": La altura se ajusta al contenido interno.
+   - android:orientation="horizontal": Los elementos hijos se colocan uno al lado del otro, de izquierda a derecha.
+   - android:padding="24dp": Aplica un espacio interno uniforme de 24dp en todos los lados del contenedor.
+   - tools:context=".LoginActivity": Indica la clase de actividad asociada, útil para previsualizar en el editor de diseño.
+
+2. <Button> "Guardar" (@+id/saveBtn)
+   - android:layout_width="wrap_content": El ancho se ajusta al texto del botón.
+   - android:layout_height="wrap_content": La altura se ajusta al contenido.
+   - android:layout_marginEnd / layout_marginRight="8dp": Aplica un margen derecho de 8dp (ambos atributos se usan para compatibilidad con diferentes versiones de Android).
+   - android:text="Guardar": Texto visible en el botón.
+   - android:onClick="onSaveClicked": Método en la actividad que se ejecuta al hacer clic.
+
+📝 Notas adicionales:
+- El uso de `layout_marginEnd` y `layout_marginRight` juntos puede ser redundante, pero se hace para asegurar compatibilidad entre dispositivos con orientación RTL (Right-to-Left).
+- En un `LinearLayout` horizontal, los márgenes laterales son importantes para evitar que los elementos se vean demasiado juntos.
+- Si se desea un diseño más flexible y alineado, se recomienda considerar `ConstraintLayout`.
+
+-->
